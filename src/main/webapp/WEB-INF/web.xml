@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>basefilter</filter-name>
+    <filter-class>cn.kgc.bankonline.filter.BaseFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>basefilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>base</servlet-name>
+    <servlet-class>cn.kgc.bankonline.controller.BaseController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>base</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
